@@ -2,17 +2,27 @@
 <html>
 <head>
 	<title>My site</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1>About Me</h1>
-	<p>I am a student at a high school. I like math, and I like computers.
-	I also like writing, and so writing I did. Expect more articles soon,
-	maybe like after a month or two.</p>
-	<h1>Articles</h1>
-	<p>Articles that I wrote. They are ordered by date. Hope you like math!</p>
-	<ul>
-		<li><a href="./Adding_from_0_to_100.pdf">Adding from 0 to 100</a></li>
-		<li><a href="./Completing_the_square.pdf">Completing the square</a></li>
-	</ul>
+	<div id="Aboutme">
+		<h2>About DinglyDo</h2>
+		<p>DinglyDo likes math, he also likes computers. So he had the idea of merging the two together! Although everything he says has already been known for more than a century, not everybody has the time or patience to read through all these articles to fulfill their curiousity. And so, I decided that I could make a fine job compiling all these resources for you -- while also adding my own flavor to the mix. So far I've only written about math, however expect other articles dealing with other subjects as I like to branch out a bit sometimes.</p>
+	</div>
+	<div id="Articles">
+		<div id="ArticlesSidebar">
+			<h2>Articles</h2>
+		</div>
+		<div id="Article">
+			<h2><a href="#">Article Viewer</a></h2>
+			<h3>PLEASE SELECT AN ARTICLE</h3>
+		</div>
+	</div>
+	<div id="Contact">
+		<h2>Contact</h2>
+		<p>You can email suggestions, questions, and other stuff <a href="mailto:dinglydo@protonmail.com">here</a>.</p>
+	</div>
+	<script type="text/javascript" src="LoadArticles.js"></script>
+	<script type="text/javascript" src="ArticleSelector.js"></script>
 </body>
 </html>
