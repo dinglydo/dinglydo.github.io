@@ -1,8 +1,7 @@
 function loadJSON(callback)
 {
 	var xobj = new XMLHttpRequest();
-		xobj.overrideMimeType("application/json");
-		xobj.open("GET", "Articles.json", true);
+		xobj.open("GET", "https://dinglydo.github.io/Articles.json", true);
 		xobj.onreadystatechange = function()
 		{
 			if (xobj.readyState === 4 && xobj.status === 200)
