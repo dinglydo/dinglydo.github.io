@@ -16,6 +16,4 @@
 			"Abstract": "Completing the square is often taught in high school in a quick but rather superficial way. This could prevent the student from having a complete understanding of the subject being taught. And so, this article was made for the curious students, for those who want to get the full picture of Completing The Square."
 		}
 	]
-} // OBSOLETE, NOW I USE JSONBIN TO LOAD MY JSON.
-// IF THERE IS A WAY TO LOAD JSON FROM THE GIT REPO, THEN I WOULD LIKE TO KNOW HOW.
-// BUT UNTIL NOW, I AM DEPENDING ON JSONBIN
+}

@@ -1,7 +1,7 @@
 function loadJSON(callback)
 {
 	var xobj = new XMLHttpRequest();
-		xobj.open("GET", "https://api.jsonbin.io/b/5b233147bd4c0f35a0b46958", false);
+		xobj.open("GET", "https://raw.githubusercontent.com/dinglydo/dinglydo.github.io/master/Articles.json", false);
 		xobj.onreadystatechange = function()
 		{
 			if (xobj.readyState === 4 && xobj.status === 200)
