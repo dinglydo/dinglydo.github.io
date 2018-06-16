@@ -1,8 +1,7 @@
 function loadJSON(callback)
 {
 	var xobj = new XMLHttpRequest();
-		xobj.overrideMimeType("text/plain");
-		xobj.open("GET", "https://raw.githubusercontent.com/Articles.json?callback=?", true);
+		xobj.open("GET", "https://api.jsonbin.io/b/5b233147bd4c0f35a0b46958", false);
 		xobj.onreadystatechange = function()
 		{
 			if (xobj.readyState === 4 && xobj.status === 200)
