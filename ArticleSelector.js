@@ -25,7 +25,7 @@ function Select(elem)
 	var Article = document.getElementById("Article");
 	var index = FindIndex(elem.innerText);
 	var ArticleJSON = ArticlesJSON['Articles'][index];
-	var HTML = '<h2><a href="Articles\\' + ArticleJSON.File + '">Article Viewer</a></h2>\n<h4>' + ArticleJSON.Title + '</h4>\n<p><strong>Subject</strong>: ' + ArticleJSON.Subject + '</p>\n<p><strong>Date Published</strong>: ' + ArticleJSON['Date published'] + '</p>\n<hr>\n<p><strong>Abstract</strong>: '+ ArticleJSON.Abstract + '</p>\n';
+	var HTML = '<h2><a href="Articles\\' + ArticleJSON.File + '">Article Viewer</a></h2>\n<h4>' + ArticleJSON.Title + '</h4>\n<p><strong>Tags</strong>: ' + ArticleJSON.Tags + '</p>\n<p><strong>Date Published</strong>: ' + ArticleJSON['Date published'] + '</p>\n<hr>\n<p><strong>Abstract</strong>: '+ ArticleJSON.Abstract + '</p>\n';
 	Article.innerHTML = HTML;
 }
 

@@ -2,14 +2,14 @@
 	"Articles": 
 	[
 		{
-			"Subject": "Math",
+			"Tags": "Math",
 			"Title": "Adding from 0 to 100",
 			"File": "Adding_from_0_to_100.pdf",
 			"Date published": "May 13, 2018",
 			"Abstract": "There exists to be an equation that can add numbers from any possible positive range (1 + 2 + 3 + 4 + 5...). How does it work? How do you find it?"
 		},
 		{
-			"Subject": "Math",
+			"Tags": "Math",
 			"Title": "Completing the square",
 			"File": "Completing_the_square.pdf",
 			"Date published": "June 10, 2018",
