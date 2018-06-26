@@ -65,8 +65,9 @@ window.onload = function()
 				}
 			}
 		}
+		document.getElementsByTagName("p")[0].innerText = (game.Turn == XPLAYER ? "X's turn" : "O's turn");
 		requestAnimationFrame(draw);
-	}	
+	}
 
 	draw();
 }
