@@ -56,6 +56,7 @@ var cellClicked = function(event)
 		return;
 	setCell(selectedCell.x, selectedCell.y, game.Turn);
 	switchTurns();
+	document.getElementsByTagName("p")[0].innerText = (game.Turn == XPLAYER ? "X's Turn" : "O's Turn");
 	gameOver();
 }
 
@@ -190,7 +191,10 @@ function Victory(Player, tie)
 {
 	Player = (Player == 1) ? "X" : "O";
 	if (!tie)
+	{
 		document.getElementsByTagName("p")[0].innerText = Player + " WON!";
+		VICTORY = 1;
+	}
 	else
 		document.getElementsByTagName("p")[0].innerText = "TIE";
 	canvas.removeEventListener("click", cellClicked);

@@ -10,6 +10,7 @@ window.onload = function()
 	{
 		function drawGrid(canvas, ctx)
 		{
+			ctx.strokeStyle = (VICTORY == 0 ? "black" : (game.Turn == XPLAYER ? "red" : "blue"));
 			for (let i = 0; i < cells - 1; i++)
 			{
 				ctx.beginPath();
@@ -47,7 +48,6 @@ window.onload = function()
 			ctx.ellipse(centerX, centerY, cellSize / 2, cellSize / 2, 0, 0, Math.PI * 2, false);
 			ctx.stroke();
 		}
-		ctx.strokeStyle = "black";
 		drawGrid(canvas, ctx);
 		for (let x = 0; x < cells; x++)
 		{
@@ -65,7 +65,6 @@ window.onload = function()
 				}
 			}
 		}
-		document.getElementsByTagName("p")[0].innerText = (game.Turn == XPLAYER ? "X's turn" : "O's turn");
 		requestAnimationFrame(draw);
 	}
 

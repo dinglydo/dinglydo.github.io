@@ -1,6 +1,7 @@
-var EMPTY = 0
-var XPLAYER = 1
-var OPLAYER = 2
+var EMPTY = 0;
+var XPLAYER = 1;
+var OPLAYER = 2;
+var VICTORY = 0;
 var cells = parseInt(location.search.substr(1));
 var cellSize = 100;
 var gameSize = cellSize * cells;
