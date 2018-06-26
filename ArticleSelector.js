@@ -1,11 +1,13 @@
+// I KNOW THIS IS REALLY BAD CODE...I MIGHT CHANGE IT LATER
 var ArticleSideBar = document.getElementById("ArticlesSidebar");
-var SelectedItem; // I KNOW THIS IS REALLY BAD CODE...I MIGHT CHANGE IT LATER
+var SelectedItem;
+var LoadedJSON = {JSON : {}, Name : ""}; // ListState can either be ARTICLES or WEBSITES
 
 function FindIndex(Title)
 {
-	for (var x = 0; x < ArticlesJSON['Articles'].length; x++)
+	for (var x = 0; x < LoadedJSON.JSON['Things'].length; x++)
 	{
-		if (ArticlesJSON['Articles'][x].Title == Title)
+		if (LoadedJSON.JSON['Things'][x].Title == Title)
 		{
 			return x;
 		}
@@ -24,19 +26,20 @@ function Select(elem)
 	// VIEW ARTICLE
 	var Article = document.getElementById("Article");
 	var index = FindIndex(elem.innerText);
-	var ArticleJSON = ArticlesJSON['Articles'][index];
-	var HTML = '<h2><a href="Articles\\' + ArticleJSON.File + '">Article Viewer</a></h2>\n<h4>' + ArticleJSON.Title + '</h4>\n<p><strong>Tags</strong>: ' + ArticleJSON.Tags + '</p>\n<p><strong>Date Published</strong>: ' + ArticleJSON['Date published'] + '</p>\n<hr>\n<p><strong>Abstract</strong>: '+ ArticleJSON.Abstract + '</p>\n';
+	var ArticleJSON = LoadedJSON.JSON['Things'][index];
+	var HTML = '<h2><a href="' + ArticleJSON.File + '">Open File</a></h2>\n<h4>' + ArticleJSON.Title + '</h4>\n<p><strong>Tags</strong>: ' + ArticleJSON.Tags + '</p>\n<p><strong>Date Published</strong>: ' + ArticleJSON['Date published'] + '</p>\n<hr>\n<p><strong>Abstract</strong>: '+ ArticleJSON.Description + '</p>\n';
 	Article.innerHTML = HTML;
 }
 
-window.onload = function()
+function ListThings()
 {
-	var Articles = [];
+	ArticleSideBar.innerHTML = '<h2><a href="#" onclick="ChangeListState()">'+ LoadedJSON.Name +'</a></h2>';
+	var Things = [];
 	var HTML = "<ul>\n";
-	for (var x = 0; x < ArticlesJSON['Articles'].length; x++)
+	for (var x = 0; x < LoadedJSON.JSON['Things'].length; x++)
 	{
-		Articles.push(ArticlesJSON['Articles'][x]);
-		HTML += '<li><a href="#" onclick="Select">' + Articles[x].Title + '</a></li>\n';
+		Things.push(LoadedJSON.JSON['Things'][x]);
+		HTML += '<li><a href="#" onclick="Select">' + Things[x].Title + '</a></li>\n';
 
 	}
 	HTML += '</ul>\n';
@@ -47,5 +50,21 @@ window.onload = function()
 	for (var x = 0; x < LIs.length; x++)
 	{
 		LIs[x].addEventListener("click", function(){Select(this);});
+	}
+}
+
+function ChangeListState()
+{
+	if (LoadedJSON.JSON === ArticlesJSON)
+	{
+		LoadedJSON.JSON = WebsitesJSON;
+		LoadedJSON.Name = "Websites";
+		ListThings();
+	}
+	else
+	{
+		LoadedJSON.JSON = ArticlesJSON;
+		LoadedJSON.Name = "Articles";
+		ListThings();
 	}
 }

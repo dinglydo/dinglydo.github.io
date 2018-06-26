@@ -70,14 +70,26 @@ div p
 	width: 30%;
 }
 
-#ArticlesSidebar > h2
+#ArticlesSidebar h2
 {
-	text-align: center;
+	text-align: center;	
+}
+
+#ArticlesSidebar > h2 > a
+{
+	text-align: center;	
+	color: blue;
+	text-decoration: underline;
 }
 
 #Article > h2
 {
 	margin: auto;
+}
+
+#Article > h4
+{
+	text-transform: capitalize; 
 }
 
 #Contact
