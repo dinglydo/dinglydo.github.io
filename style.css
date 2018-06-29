@@ -80,6 +80,12 @@ div p
 	text-align: center;	
 	color: blue;
 	text-decoration: underline;
+	transition: color .2s;
+}
+
+#ArticlesSidebar > h2 > a:hover
+{
+	color: #11ee99;
 }
 
 #Article > h2
@@ -95,4 +101,15 @@ div p
 #Contact
 {
 	box-shadow: 6px 6px blue;
+}
+
+a 
+{
+	color: blue;
+	transition: color .2s;
+}
+
+a:hover
+{
+	color: #11ee99;
 }
