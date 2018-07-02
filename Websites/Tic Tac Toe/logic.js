@@ -44,8 +44,13 @@ function getSelectedCell(event, struct)
 {
 	var mouseX = event.clientX;
 	var mouseY = event.clientY;
-	struct.x = Math.floor(mouseX / cellSize);
-	struct.y = Math.floor(mouseY / cellSize);
+	var rect = canvas.getBoundingClientRect();
+	console.log("=============");
+	console.log(rect.left + " " + rect.top);
+	console.log(mouseX + " " + mouseY);
+	console.log((mouseX - rect.left) + " " + (mouseY - rect.top));
+	struct.x = Math.floor((mouseX - rect.left) / cellSize);
+	struct.y = Math.floor((mouseY - rect.top) / cellSize);
 }
 
 var cellClicked = function(event)
@@ -85,7 +90,6 @@ function checkDiags()
 		}
 		if (prevPlayer != Player)
 		{
-			console.log("break 1");
 			break;
 		}
 	}
@@ -108,7 +112,6 @@ function checkDiags()
 		}
 		if (prevPlayer != Player)
 		{
-			console.log("break 2");
 			break;
 		}
 	}
