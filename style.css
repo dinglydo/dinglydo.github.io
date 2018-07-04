@@ -113,3 +113,8 @@ a:hover
 {
 	color: #11ee99;
 }
+
+#Article > p:last-child
+{
+	width: 70vw;
+}
