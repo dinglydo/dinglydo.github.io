@@ -14,6 +14,13 @@
 			"Description" : "Is your mouse in the circle? Open file to find out!",
 			"File": "Websites\\In Circle\\index.html",
 			"Date published" : "June 28, 2018"
+		},
+		{
+			"Tags" : "Experiment",
+			"Title" : "Lame Fireworks",
+			"Description" : "You make lame fireworks by left clicking. Super lame. (I'd like to thank the series 'Coding Math' for providing most of the code for this)",
+			"File": "Websites\\Lame Fireworks\\index.html",
+			"Date published" : "July 3, 2018"
 		}
 	]
 }
