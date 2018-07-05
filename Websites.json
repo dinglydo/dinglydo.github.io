@@ -16,11 +16,18 @@
 			"Date published" : "June 28, 2018"
 		},
 		{
-			"Tags" : "Experiment",
+			"Tags" : "Experiment, Coding Math",
 			"Title" : "Lame Fireworks",
 			"Description" : "You make lame fireworks by left clicking. Super lame. (I'd like to thank the series 'Coding Math' for providing most of the code for this)",
 			"File": "Websites\\Lame Fireworks\\index.html",
 			"Date published" : "July 3, 2018"
+		},
+		{
+			"Tags" : "Experiment, Coding Math",
+			"Title" : "Shooting Tree",
+			"Description" : "It's a flying tree, in the year 2020. Press spacebar to shoot 1 dimensional lines. Enemies aren't cool enough to be in the game",
+			"File": "Websites\\Shooting Tree\\index.html",
+			"Date published" : "July 5, 2018"
 		}
 	]
 }
