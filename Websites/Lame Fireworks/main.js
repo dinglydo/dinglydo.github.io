@@ -118,9 +118,30 @@ window.onload = function()
 
 	function update()
 	{
+		console.log(p.length);
 		context.clearRect(0, 0, width, height);
-		for (var i = 0; i < p.length; i++)
+		for (var i = p.length - 1; i >= 0; i--)
 		{
+			if (p[i].position.getX() > width)
+			{
+				p.splice(i, 1);
+				continue;
+			}
+			if (p[i].position.getX() < 0)
+			{
+				p.splice(i, 1);
+				continue;
+			}
+			if (p[i].position.getY() > height)
+			{
+				p.splice(i, 1);
+				continue;
+			}
+			if (p[i].position.getY() < 0)
+			{
+				p.splice(i, 1);
+				continue;
+			}
 			p[i].update();
 			context.beginPath();
 			context.arc(p[i].position.getX(), p[i].position.getY(), 10, 0, Math.PI * 2, false);
