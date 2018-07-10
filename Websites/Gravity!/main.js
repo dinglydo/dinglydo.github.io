@@ -20,7 +20,7 @@ window.onload = function()
 		}
 		else 
 		{
-			planetMass = 100;
+			planetMass = 0;
 			button.innerText= "Sun does not gravitate";			
 		}
 	}
