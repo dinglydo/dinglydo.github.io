@@ -1,0 +1,55 @@
+#Projects 
+{
+    display: grid;
+    grid-template-columns: 30fr 30fr;
+}
+
+.Project
+{
+    display: inline-block;
+    background-color: #49b5ca;
+    margin: 3%;
+    height: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.Project h1 
+{
+    color: #69d2e7;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 5px;
+}
+
+.Project img
+{
+    width: 30%;
+}
+
+.Project .links 
+{
+    position: absolute;
+    bottom: 0;
+}
+
+.Project .links a
+{
+    display: flex;
+    margin-top: 5%;
+    color: #3150ff;
+}
+
+.Project .note 
+{
+    width: 100%;
+    height: 10%;
+    border: 2px, solid, orange;
+    background-color: orange;
+}
+
+.Project .note img
+{
+    width: 8%;
+    height: 100%;
+    float: left;
+}

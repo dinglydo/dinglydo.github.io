@@ -1,0 +1,59 @@
+div
+{
+    margin: auto;
+    width: 60%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5%;
+    font-size: 11pt;
+}
+
+.title 
+{
+    margin: 20px 0 20px 0;
+    text-align: center;
+    font-size: 26pt;
+}
+
+p
+{
+    text-indent: 4%;
+    margin-bottom: 2%;
+}
+
+super 
+{
+    vertical-align: super;
+    font-size: 8pt;
+}
+
+table, th, td
+{
+    border: 1px solid black;
+}
+
+th 
+{
+    width: 25%;
+}
+
+td
+{
+    text-align: center;
+}
+
+@media print
+{
+    footer, header 
+    {
+        visibility: hidden;
+        margin: 0%;
+        padding: 0;
+    }
+
+    div
+    {
+        margin-top: 0;
+        margin-bottom: 0%;
+        padding: 0;
+    }
+}

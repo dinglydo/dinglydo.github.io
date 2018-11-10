@@ -1,0 +1,101 @@
+/*
+COLOR PALLETE
+#69d2e7
+#a7dbd8
+#3150ff
+ */
+
+/*====================
+		HEADER
+====================*/
+
+header 
+{
+	margin: 0 0 6% 0;
+}
+
+#topbar, footer
+{
+	display: block;
+	background-color: #69d2e7;
+	padding: 20px 0;
+	width: 100%;
+	text-align: center;
+	border-radius: 0 0 10px 10px;
+}
+
+#topbar 
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#topbar li {display: inline;}
+
+#topbar li::before {content: "->"}
+#topbar li:first-child::before {content: ""};
+
+#topbar li, footer
+{
+	font-size: 20px;
+}
+
+.hoverable
+{
+	position: relative;
+}
+
+.hoverable::before
+{
+	content: "";
+	position: absolute;
+	width: 75%;
+	height: 2px;
+	bottom: 0;
+	left: 12.5%;
+	background-color: #3150ff;
+	transform: scaleX(0);
+	transition: transform 0.2s ease-in-out 0s;
+}
+
+.hoverable:hover::before
+{
+	transform: scaleX(1);
+}
+
+.hoverable:hover
+{
+	color: #3150ff;
+}
+
+#selected
+{
+	color: #3150ff;
+	font-size: 22px;
+}
+
+
+/*====================
+		FOOTER
+====================*/
+
+footer ul
+{
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-evenly;
+}
+/*====================
+		BODY
+====================*/
+
+body 
+{
+	background-color: #69d2e7;
+}
+
+.inlink /* in-line link, should be an anchor*/
+{
+	color: #3150ff;
+}
