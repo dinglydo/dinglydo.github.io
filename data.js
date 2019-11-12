@@ -31,5 +31,5 @@ var Projects =
 	]
 }
 
-var SelectedCategory = "Articles";
+var SelectedCategory = "Software";
 var projectsElement = document.getElementById("projects");
