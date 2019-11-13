@@ -146,7 +146,7 @@ a
 	color: #2167ff;
 }
 
-@media screen and (max-device-width: 750px) and (orientation: portrait)
+@media screen and (max-device-width: 750px)
 {
 	#projects 
 	{
