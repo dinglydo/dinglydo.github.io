@@ -148,7 +148,7 @@ a
 
 @media screen and (max-device-width: 750px)
 {
-	#projects 
+	#projects
 	{
 		grid-template-columns: 100vw;
 	}
