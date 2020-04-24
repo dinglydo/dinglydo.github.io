@@ -27,6 +27,13 @@ var Projects =
 			"ImagePath" : "Moles.jpg",
 			"Link" : "https://medium.com/@amrojjeh/what-are-moles-ec867a145ad5",
 			"Date" : "November 2018"
+		},
+		{
+			"Name" : "Dimensional Analysis",
+			"Description" : "How to intuively think of Dimensional Analysis, in a single page",
+			"ImagePath" : "DA.png",
+			"Link" : "https://medium.com/@amrojjeh/dimensional-analysis-681170039376",
+			"Date" : "November 2019"
 		}
 	]
 }
