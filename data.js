@@ -34,6 +34,13 @@ var Projects =
 			"ImagePath" : "DA.png",
 			"Link" : "https://medium.com/@amrojjeh/dimensional-analysis-681170039376",
 			"Date" : "November 2019"
+		},
+		{
+			"Name" : "1024 or 1000?",
+			"Description" : "There is a misunderstanding that occurs much too often between developers. Is a kilobit 1024 or 1000 bits?",
+			"ImagePath" : "1024 or 1000.png",
+			"Link" : "https://medium.com/@amrojjeh/1024-or-1000-22b7a01efe29?sk=dee2586d3bf0b2bccaa800e9e3035f7d",
+			"Date" : "May 2020"
 		}
 	]
 }
