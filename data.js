@@ -29,6 +29,13 @@ var Projects =
 	"Articles":
 	[
 		{
+			"Name" : "The Grading System",
+			"Description" : "My thoughts on the current American high school grading system.",
+			"ImagePath" : "grading_system.jpg",
+			"Link" : "https://medium.com/@amrojjeh/the-grading-system-9e3adf8ccff9?sk=2b73a880d69f3c57ff633fbc92431c9f",
+			"Date" : "May 2020"
+		},
+		{
 			"Name" : "1024 or 1000?",
 			"Description" : "There is a misunderstanding that occurs much too often between developers. Is a kilobit 1024 or 1000 bits?",
 			"ImagePath" : "1024 or 1000.png",
