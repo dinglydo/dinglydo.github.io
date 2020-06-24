@@ -4,10 +4,10 @@ var Projects =
 	[
 		{
 			"Name" : "Party bot",
-			"Description" : "A Town of Salem inspired discord bot. Work in progress",
+			"Description" : "A Town of Salem inspired discord bot. Includes a bunch of mini-games. Custom games coming soon, almost ready for release.",
 			"ImagePath" : "bot.jpg",
 			"Link" :"https://github.com/Persian-Eagle/Town-of-Salem-Bot",
-			"Date" : "May 2020"
+			"Date" : "June 2020"
 		},
 		{
 			"Name" : "Job Tracker",
