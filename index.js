@@ -57,10 +57,10 @@ function generateHTML(name, description, imagePath, link, date) // Generates the
 {
 	var header;
 	if (imagePath == "None")
-		header = '<div><a href="' + link + '"></a>';
+		header = '<div><a href="' + link + '" target="_blank"></a>';
 	else
-		header = '<div><a href="' + link + '"><img src="' + imagePath + '"></a>';
-	var h1 = '<h1><a href="' + link + '">' + name + '</a></h1>';
+		header = '<div><a href="' + link + '" target="_blank"><img src="' + imagePath + '"></a>';
+	var h1 = '<h1><a href="' + link + '" target="_blank">' + name + '</a></h1>';
 	var date = "<i>Last updated: " + date + "</i>"
 	var p = "<p>" + description + "</p>";
 	return header + h1 + date + p + "</div>";

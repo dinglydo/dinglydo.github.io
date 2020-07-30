@@ -29,6 +29,20 @@ var Projects =
 	"Articles":
 	[
 		{
+			"Name" : "It was worth a shot",
+			"Description" : "The first story to build on the world set by the Doctor's Note",
+			"ImagePath": "camp.svg",
+			"Link" : "https://medium.com/@amrojjeh/it-was-worth-a-shot-cd7af5fe1ba1?source=friends_link&sk=8a7a6d5ec270c275e5eaf6520c253dbf",
+			"Date" : "July 2020"
+		},
+		{
+			"Name" : "Doctor's Note",
+			"Description": "A story I wrote out of context to act as a rough sketch for a world that's getting built on, as shown by the newer story, <i>It Was Worth a Shot</i>.",
+			"ImagePath" : "doctor.svg",
+			"Link" : "https://medium.com/@amrojjeh/doctors-note-455b4b3ec221?source=friends_link&sk=f8a2410e08bad2a841530263b5c462e8",
+			"Date": "July 2020"
+		},
+		{
 			"Name" : "The Grading System",
 			"Description" : "My thoughts on the current American high school grading system.",
 			"ImagePath" : "grading_system.jpg",
@@ -55,7 +69,7 @@ var Projects =
 			"ImagePath" : "Moles.jpg",
 			"Link" : "https://medium.com/@amrojjeh/what-are-moles-ec867a145ad5",
 			"Date" : "November 2018"
-		},
+		}
 	]
 }
 
