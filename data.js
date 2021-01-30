@@ -24,14 +24,21 @@ var Projects =
 			"Date": "May 2018"
 		}
 	],
-	"MDF":
+	"Education":
 	[
 		{
-			"Name": "MDF #1: DDG Overview",
-			"Description": "A brief overview of what's being worked on",
-			"ImagePath": "https://miro.medium.com/max/700/1*11So2GzqQNkqUTJpPBbtdQ.png",
-			"Link": "https://dinglydo.medium.com/monday-development-facts-1-bff9bc969719?sk=c973ebcfc48bc42bc7feb4466c258442",
-			"Date": "November 2020"
+			"Name": "Recursion",
+			"Description": "A simple explanation of recursion",
+			"ImagePath": "https://miro.medium.com/max/2400/0*Q46XI8JJjmOHMdL7",
+			"Link": "https://amrojjeh.medium.com/recursion-932aeac3f669?sk=b87ed7083f5daebbc91d8f1793ffe80b",
+			"Date": "January 2021"
+		},
+		{
+			"Name": "1024 or 1000?",
+			"Description": "There is a misunderstanding that occurs much too often between developers. Is a killobit 1024 or 1000 bits?",
+			"ImagePath": "https://miro.medium.com/max/2400/1*7ilUOC7hinanyhbc8JkqYA.png",
+			"Link": "https://amrojjeh.medium.com/1024-or-1000-22b7a01efe29?sk=dee2586d3bf0b2bccaa800e9e3035f7d",
+			"Date": "May 2020"
 		}
 	]
 }
