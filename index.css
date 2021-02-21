@@ -85,7 +85,7 @@ body
 .selected
 {
 	padding-top: 0;
-	font-size: 2em;
+	font-size: 1.5em;
 	color: #2167ff;
 }
 
@@ -127,10 +127,15 @@ body
 }
 
 
-.footerIcon
+footer
 {
 	display: flex;
 	justify-content: center;
+}
+
+.footerIcon
+{
+	margin-right: 1%;
 }
 
 .footerIcon img
